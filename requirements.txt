@@ -1,10 +1,7 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-sqlalchemy==2.0.23
-alembic==1.12.1  # Pour migrations DB (optionnel)
-pydantic==2.5.0
-pydantic-settings==2.1.0
-python-jose[cryptography]==3.3.0  # JWT
-passlib[bcrypt]==1.7.4  # Hashing (pour users si extension)
-python-multipart==0.0.6  # Pour forms si besoin
-psycopg2-binary==2.9.9  # Pour PostgreSQL sur Render
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+sqlalchemy==2.0.35
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-jose[cryptography]==3.3.0
+python-dotenv==1.0.1
