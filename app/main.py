@@ -10,13 +10,13 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="Fare Calculator API - TraEnSys",
-    description="API conforme à la spécification v1.0",
+    description="API conforme à la spécification v2.0",
     version="1.0",
     docs_url="/docs"
 )
 
-app.include_router(fares.router, prefix="/api/v1")
-app.include_router(itineraries.router, prefix="/api/v1")
+app.include_router(fares.router, prefix="/api/v2")
+app.include_router(itineraries.router, prefix="/api/v2")
 
 @app.get("/")
 def root():
